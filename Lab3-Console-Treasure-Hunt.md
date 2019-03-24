@@ -197,9 +197,6 @@ Locate the following information:
 
 3. Which **Containers** are part of the **helm-api** Deployment?
 
-4. Find the **Logs** for the **es-client** Container in the **logging-elk-client** Deployment.
-
-5. Which **Ports** are exposed on the **es-client** Container in the **logging-elk-client** Deployment?
 
 ### StatefulSets <a name="statefulsets"></a>
 Click **Menu** and then select **Workloads > StatefulSets** to navigate to the StatefulSets page. Like a Deployment, a StatefulSet manages Pods that are based on an identical container spec. Unlike a Deployment, a StatefulSet maintains a sticky identity for each of their Pods. These pods are created from the same spec, but are not interchangeable: each has a persistent identifier that it maintains across any rescheduling.
