@@ -152,7 +152,7 @@ Click **Menu** and then select **Platform > Monitoring** to open Grafana in a ne
 
 ![Grafana Home](images/treasurehunt/grafanahome.jpg)
 
-Click **Home** on the navigation bar and select **ICP 2.1 Performance IBM Provided 2.5** from the list to open the IBM provided Grafana page
+Click **Home** on the navigation bar and select **ICP Performance IBM Provided 2.5** from the list to open the IBM provided Grafana page
 
 ![Grafana ICP](images/treasurehunt/grafanaicp.jpg)
 
