@@ -36,11 +36,11 @@ Lab - Console Treasure Hunt
 In this lab exercise, you explore the IBM Cloud Private Administration Console by completing a Treasure Hunt.
 
 ### Log in to your ICP Admin Console <a name="login"></a>
-If you are not already logged in to the ICP Admin Console from a previous exercise, open a browser and navigate to `https://10.0.0.2:8443`
+If you are not already logged in to the ICP Admin Console, open a browser and navigate to `https://10.0.0.1:8443`
 
 ![ICP Login Screen](images/treasurehunt/login.jpg)
 
-Log in by using `username: admin` and `password: admin`
+Log in by using `username: admin` and `password: icp1nCl0ud`
 
 ### Getting Started <a name="gettingstarted"></a>
 The **Getting Started** page displays after you successfully log in.
