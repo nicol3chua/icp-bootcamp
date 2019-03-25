@@ -64,7 +64,7 @@ In this section, you deploy, test, and then remove the NodeJS Sample Helm Chart 
 
   ![Deployment and Service](images/helm101/deploymentdata.jpg)
 
-12. Click **Launch** in the top right corner of the screen to open a new browser tab and connect to the sample application.
+12. Wait for the **Deployment** to be **Available** (value showing 1) before clicking **Launch** in the top right corner of the screen to open a new browser tab and connect to the sample application.
 
 13. Click **Get monitoring** and take a moment to review the documentation regarding app-metrics.
 
