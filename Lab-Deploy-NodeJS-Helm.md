@@ -128,9 +128,10 @@ In this section, you deploy, test, and then remove the NodeJS Sample Helm Chart 
   ```
   The files listed in this directory can be auto-generated when you run `helm create ibm-nodejs-sample`. However, these have been created in advance and stored in this git repository. Hence you DO NOT NEED to run this command. 
   
-  The **Chart.yaml** file has the chart info, including name, description and version. 
-  The **values.yaml** file stores the default values used for the chart. 
-  The **templates** directory contains the YAML definitions for your applications, services, deployments and other Kubernetes objects. 
+  - The **Chart.yaml** file has the chart info, including name, description and version. 
+  - The **values.yaml** file stores the default values used for the chart. 
+  - The **templates** directory contains the YAML definitions for your applications, services, deployments and other Kubernetes objects. 
+  
   Should you have subcharts, a **charts** sub-directory will be listed and this is the place where all subcharts are stored. 
   
 8. Review the content of the **Chart.yaml** file. 
