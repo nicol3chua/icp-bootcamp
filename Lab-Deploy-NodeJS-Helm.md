@@ -94,12 +94,11 @@ In this section, you deploy, test, and then remove the NodeJS Sample Helm Chart 
 3. Run the following commands to log in to the ICP CLI for your ICP Cluster.  
 
   ```
-  cd /root
 
   cloudctl login -a https://<icp_master_ip>:8443 --skip-ssl-validation
   ```
 
-4. Enter `username: admin` and `password: admin` when prompted, and select the `mycluster Account`.
+4. Enter `username: admin` and `password: icp1nCl0ud` when prompted, and select the `mycluster Account` and select the `helm-lab` namespace.
 
 5. Run the following command to initialize the Helm CLI:
 
