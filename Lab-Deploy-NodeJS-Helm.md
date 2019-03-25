@@ -120,7 +120,27 @@ In this section, you deploy, test, and then remove the NodeJS Sample Helm Chart 
   git pull https://github.com/ibm-developer/icp-nodejs-sample
   ```
 
-7. Run the following commands to install the NodeJS Sample Helm Chart in to your ICP cluster:
+7. Review the files that are used by helm. 
+  ```
+  cd chart/ibm-nodejs-sample
+  
+  ls -l
+  ```
+  The files listed in this directory can be auto-generated when you run `helm create ibm-nodejs-sample`. However, these have been created in advance and stored in this git repository. Hence you DO NOT NEED to run this command. 
+  
+  The **Chart.yaml** file has the chart info, including name, description and version. 
+  The **values.yaml** file stores the default values used for the chart. 
+  The **templates** directory contains the YAML definitions for your applications, services, deployments and other Kubernetes objects. 
+  Should you have subcharts, a **charts** sub-directory will be listed and this is the place where all subcharts are stored. 
+  
+8. Review the content of the **Chart.yaml** file. 
+  ```
+  cat Chart.yaml
+  ```
+  You can see the name of the chart is **ibm-nodejs-sample** and its default version is "1.2.0".
+    
+
+9. Run the following commands to install the NodeJS Sample Helm Chart in to your ICP cluster:
 
   ```
   cd chart/ibm-nodejs-sample
@@ -128,13 +148,13 @@ In this section, you deploy, test, and then remove the NodeJS Sample Helm Chart 
   helm install --name nodejs-sample-cli --namespace nodejs-lab . --tls
   ```
 
-8. Run the following command to validate that the Helm Chart has been deployed:
+10. Run the following command to validate that the Helm Chart has been deployed:
 
   ```
   helm list --namespace nodejs-lab --tls
   ```
 
-9. Run the following command to get the port that was assigned to the Service:
+11. Run the following command to get the port that was assigned to the Service:
 
   ```
   kubectl get --namespace nodejs-lab services nodejs-sample-cli-ibm-no
@@ -148,13 +168,13 @@ In this section, you deploy, test, and then remove the NodeJS Sample Helm Chart 
   nodejs-sample-cli-ibm-no   NodePort   10.0.0.207   <none>        3000:32457/TCP   1m
   ```
 
-10. Open a browser tab, and navigate to **http://icp-proxy-ip:service-port**. Validate that the NodeJS Sample application is up and running. For example, http://9.37.138.12:32457/.
+12. Open a browser tab, and navigate to **http://icp-proxy-ip:service-port**. Validate that the NodeJS Sample application is up and running. For example, http://9.37.138.12:32457/.
 
-11. Close the browser tab.
+13. Close the browser tab.
 
-12. Return to the **ICP Admin Console**, navigate to the **Helm Releases** page and verify that the **nodejs-sample-cli** Helm Release is displayed. Drill-down and verify that the **Port** for the Service is the same as what was returned by the CLI.
+14. Return to the **ICP Admin Console**, navigate to the **Helm Releases** page and verify that the **nodejs-sample-cli** Helm Release is displayed. Drill-down and verify that the **Port** for the Service is the same as what was returned by the CLI.
 
-13. The command to remove the NodeJS Sample Helm Chart is shown below, but you will use the sample app again in the Logging Lab, so leave it running for now.
+15. The command to remove the NodeJS Sample Helm Chart is shown below, but you will use the sample app again in the Logging Lab, so leave it running for now.
 
   ```
   NOTE: DO NOT ISSUE THIS COMMAND AT THIS TIME, IT IS HERE FOR REFERENCE ONLY
